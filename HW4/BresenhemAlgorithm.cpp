@@ -3,8 +3,8 @@
 
 void display() {
 
-    int x1 = 1, y1 = 1;
-    int x2 = 9, y2 = 9;
+    int x1 = 4, y1 = 7;
+    int x2 = 7, y2 = 3;
 
     glClear(GL_COLOR_BUFFER_BIT); // Clear the color buffer
 
