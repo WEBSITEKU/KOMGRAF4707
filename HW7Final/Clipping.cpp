@@ -90,7 +90,7 @@ void cohenSutherland(double x1, double y1, double x2, double y2) {
     }
 
     if (accept) {
-        glColor3f(0.0, 1.0, 0.0); // Warna hijau untuk garis hasil pemotongan
+        glColor3f(0.0, 1.0, 0.0);
         glBegin(GL_LINES);
         glVertex2d(x1, y1);
         glVertex2d(x2, y2);
@@ -98,17 +98,16 @@ void cohenSutherland(double x1, double y1, double x2, double y2) {
     }
 }
 
-// Fungsi untuk menampilkan scene
 void display() {
     glClear(GL_COLOR_BUFFER_BIT);
 
-    glColor3f(1.0, 0.0, 0.0); // Warna merah untuk garis asli
+    glColor3f(1.0, 0.0, 0.0);
     glBegin(GL_LINES);
     glVertex2d(30, 80);
     glVertex2d(300, 200);
     glEnd();
 
-    glColor3f(0.0, 0.0, 0.0); // Warna hitam untuk jendela clipping
+    glColor3f(0.0, 0.0, 0.0);
     glBegin(GL_LINE_LOOP);
     glVertex2d(xMin, yMin);
     glVertex2d(xMax, yMin);
@@ -121,7 +120,6 @@ void display() {
     glFlush();
 }
 
-// Fungsi untuk mengatur lingkungan OpenGL
 void init() {
     glClearColor(1.0, 1.0, 1.0, 1.0);
     gluOrtho2D(0, 400, 0, 300);
